@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Charting support
+Bundle-SymbolicName: com.onpositive.semantic.ui.charting.xml
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.onpositive.semantic.ui.charting.xml.Activator
+Bundle-Vendor: ONPOSITIVE
+Require-Bundle: org.eclipse.core.runtime,
+ com.onpositive.commons.platform;bundle-version="1.0.0",
+ com.onpositive.semantic.ui.swt
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ActivationPolicy: lazy

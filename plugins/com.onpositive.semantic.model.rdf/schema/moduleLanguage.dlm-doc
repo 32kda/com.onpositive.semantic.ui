@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<namespace name="DataModel" url="http://www.jetface.org/datamodel">
+	<element-doc name="property">
+		Property represents model element 			
+	</element-doc>	
+	<property-doc >
+	</property-doc>
+</namespace>

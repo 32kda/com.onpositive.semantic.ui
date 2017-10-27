@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>   
+   <extension-point id="images" name="Images" schema="schema/images.exsd"/>
+   <extension-point id="decorators" name="Object Decorators" schema="schema/decorators.exsd"/>
+   <extension-point id="labels" name="Text Provider" schema="schema/labels.exsd"/>
+   <extension-point id="tooltip" name="Tooltip configuration" schema="schema/tooltip.exsd"/>
+   <extension-point id="widgetRegistry" name="Widget Registry" schema="schema/widgetRegistry.exsd"/>
+   <extension-point id="objectActions" name="Object Actions" schema="schema/objectActions.exsd"/>
+   <extension-point id="role" name="Semantic Role" schema="schema/role.exsd"/>
+   <extension-point id="contentAssist" name="Content Assist Configuration" schema="schema/contentAssist.exsd"/>
+   <extension-point id="cellEditor" name="Cell Editors" schema="schema/cellEditor.exsd"/>
+   <extension-point id="visualisationAspects" name="Visualisation Aspect" schema="schema/visualisationAspects.exsd"/>
+   <extension-point id="semanticLayout" name="Semantic Layout Contribution" schema="schema/semanticLayout.exsd"/>
+   <extension-point id="metaContributor" name="Meta contributor" schema="schema/metaContributor.exsd"/>
+   <extension-point id="objectListener" name="Object Listeners" schema="schema/objectListener.exsd"/>
+   <extension-point id="queryPreprocessor" name="Object Listeners" schema="schema/queryPreprocessor.exsd"/>
+   <extension-point id="commandPreprocessor" name="Object Listeners" schema="schema/commandPreprocessor.exsd"/>
+   
+   <extension
+         point="com.onpositive.semantic.model.metaContributor">
+      <serviceProvider
+            providerClass="com.onpositive.semantic.model.platform.registry.LabelRegistry"
+            serviceClass="com.onpositive.semantic.model.api.labels.ITextLabelProvider">
+      </serviceProvider>
+      <serviceProvider
+            providerClass="com.onpositive.semantic.model.platform.registry.ListenerRegistry"
+            serviceClass="com.onpositive.semantic.model.api.changes.IObjectListenersProvider">
+      </serviceProvider>
+      <serviceProvider
+            providerClass="com.onpositive.semantic.model.platform.registry.QueryPreprocessorRegistry"
+            serviceClass="com.onpositive.semantic.model.api.query.IQueryPreprocessorProvider">
+      </serviceProvider>
+   </extension>
+</plugin>

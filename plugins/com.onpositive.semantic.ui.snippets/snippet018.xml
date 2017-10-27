@@ -1,0 +1,25 @@
+<form xmlns="http://jetface.org/JetFace1.0/" grabVertical="true">
+    <model autoCommit="false">
+        <binding caption="%Name" id="name" path="name" required="true"/>
+        <binding caption="%Age" id="age" path="age">
+            <range min="1" max="100"/>
+        </binding>
+        <binding id="description" path="DescriptionText" required="true"/>
+        <composite-action id="ok" caption="Ok" enablement="!error">
+            <commit/>
+            <close-shell/>
+        </composite-action>
+        <close-shell id="cancel" caption="Cancel"/>
+        <binding caption="%Position" id="position" path="position" required="true">
+            <realm class="com.onpositive.semantic.ui.snippets.Snippet016EditorSample$KnownPositions"/>
+        </binding>
+    </model>
+    <label bindTo="description" richContent="true"/>
+    <string bindTo="name"/>
+    <combo bindTo="position"/>
+    <spinner bindTo="age"/>
+    <hc grabHorizontal="true" hAlign="right" grabVertical="true" vAlign="bottom" margin="0,0,0,5">
+        <button bindTo="ok"/>
+        <button bindTo="cancel"/>
+    </hc>  
+</form>

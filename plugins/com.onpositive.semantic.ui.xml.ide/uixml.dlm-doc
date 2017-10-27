@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//realmDefinition">allows to specify realm which contains string members for the given binding</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//command-handler">allows to declare handler for a command (eclipse commands)</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//viewer/persist-selection">if 'false' specified as a value of this element viewer will not attempt to maintain selection during viewer refresh</documentation>
+    <documentation icon="images/clcl16/tree_obj.gif" ref="http://jetface.org/JetFace1.0//tree">Tree element allows to show a tree to the user</documentation>
+    <documentation icon="images/clcl16/text_obj.gif" ref="http://jetface.org/JetFace1.0//string">simple text field, supports validation and content assist </documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//external-realm">allows to specify external realm for the parent binding</documentation>
+    <documentation icon="images/clcl16/rcp_editor.gif" ref="http://jetface.org/JetFace1.0//binding">Instantiations will serve as a contractor on this assignment's.</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//table/linesVisible">'linesVisible' allows to control visibility of  lines that separate cells in the table</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//toggle-filter">&lt;html&gt;
+&lt;body&gt;
+&lt;P  style="margin: 4;"align = "left"&gt;allows to specify boolean filter action, parent control must implement &lt;i&gt;IFiltrable&lt;/i&gt; interface&lt;/P&gt;
+&lt;/body&gt;&lt;/html&gt;</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//text/multiline">if 'multiline' attribute is specified to true' control will allow user to type multiple lines</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//commit">allows to commit data in the parent binding</documentation>
+    <documentation icon="images/clcl16/menu_obj.gif" ref="http://jetface.org/JetFace1.0//popup-menu">Allows to specify popup menu for element</documentation>
+    <documentation icon="images/clcl16/composite_obj_v.gif" ref="http://jetface.org/JetFace1.0//vc">'vc' element allows to define container with children that will be situated on a one per line basis</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//edit-selection">allows to start editing of the selected element</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//editor">abstract super elements of all elements that may be binded to some binding in the data model</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//moveDown">allows to add moveDown action to the parent viewer </documentation>
+    <documentation icon="images/clcl16/tabfolder_obj.gif" ref="http://jetface.org/JetFace1.0//tab-folder">Allows user to create tab folder</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//validator">'validator' element allows to install custom value validator  on the binding </documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//data-source">will be described later</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//close-shell">allows to close shell were this action is located</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//actions">allows to specify a group of actions that should be contributed to parent action context</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//action">allows to contribute action to current action contribution context</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//uielement/id">id  attribute  allows to refer on it from external context or from same 'dlf' file</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//properties">this control will be described later</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//table/headerVisible">'headerVisible' attribute allows to control visibility of the table header</documentation>
+    <documentation icon="images/clcl16/toolbar_obj.gif" ref="http://jetface.org/JetFace1.0//toolbar">this element allows to insert toolbar control in the current container</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//content-assist">allows to specify content assist for the binding</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//string/readonly">allows to specify that this string field should be shown as read only</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//tooltip-creator">allows to setup custom tooltip creator</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//unique">Marks that this element property should have unique value</documentation>
+    <documentation icon="images/clcl16/ccombo_obj.gif" ref="http://jetface.org/JetFace1.0//combo">&lt;html&gt;
+&lt;body&gt;
+&lt;P  style="margin: 4;"align = "left"&gt;allows to add combo editor to the parent container&lt;/P&gt;
+&lt;/body&gt;&lt;/html&gt;</documentation>
+    <documentation icon="images/clcl16/ctabfolder_obj.gif" ref="http://jetface.org/JetFace1.0//ctab-folder">allows to create CTabFolder control</documentation>
+    <documentation icon="images/clcl16/text_obj.gif" ref="http://jetface.org/JetFace1.0//pattern-filter">allows to add simple text filter to parent container</documentation>
+    <documentation icon="images/clcl16/section_obj.gif" ref="http://jetface.org/JetFace1.0//section">this complex editor allows to create section container</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//toggle-filter/class">class of filter to create, class must implement com.onpositive.semantic.model.realm.IFilter interface</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//text-label/provider">class of the provider to use</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//label-lookup">allows to connect binding to mapper that will map text to object of required class</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//table/imageOnFirstColumn">if 'imageOnFirstColumn' attribute is specified to true table will always have a image on first column and this image will be calculated basing on row objects</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//moveUp">allows to add move up action to the parent viewer </documentation>
+    <documentation icon="images/clcl16/composite_obj_h.gif" ref="http://jetface.org/JetFace1.0//hc">'hc' element allows to define container with children that will be situated on one line</documentation>
+    <documentation icon="images/clcl16/textarea_obj.gif" ref="http://jetface.org/JetFace1.0//text">allows to create control which may be used to represent text and supports configuration using org.eclipse.jface.text.source.SourceViewerConfiguration objects</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//defaultValue">allows to specify default value for the parent binding</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//tooltip-creator/value">class of tooltip creator that should be used, must implement 'IInformationalControlContentProducer' interface</documentation>
+    <documentation icon="images/clcl16/viewform_obj.gif" ref="http://jetface.org/JetFace1.0//columns">&lt;html&gt;
+&lt;body&gt;
+&lt;P  style="margin: 4;"align = "left"&gt;column that are represented in the parent table should be described inside this element &lt;/P&gt;
+&lt;/body&gt;&lt;/html&gt;</documentation>
+    <documentation icon="images/clcl16/radiobutton_obj.gif" ref="http://jetface.org/JetFace1.0//radio">Allows user to create radio button</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//bindingMember">&#13;
+abstract super elements for all elements that may be placed in the binding</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//add-fromRealm">allows to add action which allows addition of elements from realm to the parent viewer</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//objectValue">allows to specify binding with a given value</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//viewer/elementRole">allows to control role of elements</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//create-member">allows to add new data object to parent viewer</documentation>
+    <documentation icon="images/clcl16/composite_obj.gif" ref="http://jetface.org/JetFace1.0//composite-editor">declares complex editor </documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//decorator">allows to add decorator to the parent viewer</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//doNotGroup">allows to remove grouping from the parent viewer</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//uielement/grabHorizontal">if set to true component will grab horizontal space if it is placed in container with automatic layout management</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//text-label">allows to setup custom text label provider on a element</documentation>
+    <documentation icon="images/clcl16/composite_obj_h.gif" ref="http://jetface.org/JetFace1.0//headControl">allows to specify container that should be placed inside head control of parent form</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//regexp-validator">allows to add validator based on validation of text representation of the data against given regular expression</documentation>
+    <documentation icon="images/clcl16/column_obj.gif" ref="http://jetface.org/JetFace1.0//column">specifies column in the table</documentation>
+    <documentation icon="images/calendar.gif" ref="http://jetface.org/JetFace1.0//date">allows to add date time control to the parent container</documentation>
+    <documentation icon="images/clcl16/toolbar_obj.gif" ref="http://jetface.org/JetFace1.0//toolbar-manager">it is needed to investigate what it is for</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//contentProvider">allows to specify custom content provider for the parent viewer</documentation>
+    <documentation icon="images/clcl16/group_obj.gif" ref="http://jetface.org/JetFace1.0//group">This element allows to create SWT Group</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//undoredo-block">This block allows contribute 'undo' and 'redo' actions to the current context</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//objectContribution">allows to contribute selection specific actions to the current action context</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//text/sourceViewerConfigurator">this attribute should point to class implementing IViewerConfigurator interface and allows to setup custom configuration on the text viewer</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//stringMember/value">value to add</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//composite-action">allows to execute sequence of actions</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//uielement/vAlign">Vertical alignment of the element (is taken in account by auto layouts) valid values are: fill,top,bottom,center</documentation>
+    <documentation icon="images/clcl16/clabel_obj.gif" ref="http://jetface.org/JetFace1.0//label">allows to insert text label to the parent control</documentation>
+    <documentation icon="images/clcl16/text_obj.gif" ref="http://jetface.org/JetFace1.0//password">allows to add password editor to the parent container</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//model">allows to describe used data model </documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//uielement/text">text to show in the component(may be interpreted differently)</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//checkbox/readonly">allows to specify that this check box should be not click able</documentation>
+    <documentation icon="images/clcl16/button_obj.gif" ref="http://jetface.org/JetFace1.0//button">I like it</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//binding/enableUndo">&lt;html&gt;
+&lt;body&gt;
+&lt;P  style="margin: 4;"align = "left"&gt;if this attribute is has false value this binding will not produce undoable commands&lt;/P&gt;
+&lt;/body&gt;&lt;/html&gt;</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//uielement/theme">theme allows to specify theme that will be used for the element</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//range">Allows to specify numeric range for a value</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//uielement/grabVertical">if set to true component will grab vertical space if it is placed in container with automatic layout management</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//uielement/role">role allows to specify role that will be used for the element</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//interceptor">allows to add action interceptor to the parent viewer</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//labelProvider">allows to specify custom label provider for the parent viewer</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//groupBy">allows to create group by action in the parent action context  (should be used only inside list or table)</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//selectAll">this action allows to select all elements in the parent viewer</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//uielement/background-image">background image allows to specify background image that will be used for the element value should be identifier of the image declared using 'com.onpositive.semantic.ui.images' extension point&#13;
+</documentation>
+    <documentation icon="images/clcl16/composite_obj.gif" ref="http://jetface.org/JetFace1.0//container">basic container for UI controls</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//uielement">abstract super element for all UI controls</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//uielement/foreground">foreground allows to specify foreground color from JFace color registry that will be used for the element</documentation>
+    <documentation icon="images/clcl16/checkbox_obj.gif" ref="http://jetface.org/JetFace1.0//checkbox">Allows user to add check box editor to the parent container</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//separator-characters">allows to specify separator characters for  the parent binding</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//validator/value">name of the validator class. (class should implement com.onpositive.semantic.model.realm.IValidator)</documentation>
+    <documentation icon="images/clcl16/table_obj.gif" ref="http://jetface.org/JetFace1.0//table">table element allows to insert table control in the parent container</documentation>
+    <documentation icon="images/clcl16/scrolledcomposite_obj.gif" ref="http://jetface.org/JetFace1.0//scrollable">&lt;html&gt;
+&lt;body&gt;
+&lt;P  style="margin: 4;"align = "left"&gt;Allows to create scrollable container&lt;/P&gt;
+&lt;/body&gt;&lt;/html&gt;</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//contributionElement">abstract super element of all contribution elements</documentation>
+    <documentation icon="images/clcl16/listbox_obj.gif" ref="http://jetface.org/JetFace1.0//list">allows to insert a list control to the parent container</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//text-label/value">additional value that is passed to a provider</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//uielement/caption">label for the component(may be interpreted differently depending of component implementation)</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//uielement/font">font allows to specify font that will be used for the element(expect key that may be mapped to font in JFace font registry)</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//uielement/hAlign">Horizontal alignment of the element (is taken in account by auto layouts)</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//section/showValueInTitle">&lt;html&gt;
+&lt;body&gt;
+&#13;
+&lt;P  style="margin: 4;"align = "left"&gt;Set it to 'false' to enable section caption&lt;/P&gt;&#13;
+&lt;/body&gt;&lt;/html&gt;&#13;
+</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//add-new">allows to add new object to the parent viewer</documentation>
+    <documentation icon="images/clcl16/browser_obj.gif" ref="http://jetface.org/JetFace1.0//browser">&lt;html&gt;
+&lt;body&gt;
+&lt;P  style="margin: 4;"align = "left"&gt;Allows to insert browser control to the parent container&#13;
+&lt;/P&gt;
+&lt;br&gt;
+&lt;/body&gt;&lt;/html&gt;</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//deselectAll">allows to deselect all elements in the parent viewer</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//factory-provider">allows to connect binding to factory provider which knows how to produce new objects</documentation>
+    <documentation icon="images/clcl16/link_obj.gif" ref="http://jetface.org/JetFace1.0//link">allows to add link control to the parent container</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//uielement/tooltip-text">tooltip text that should be shown when user hovers the element</documentation>
+    <documentation icon="images/clcl16/sashform_obj.gif" ref="http://jetface.org/JetFace1.0//splitter">Splitter allows to create horizontally or vertically oriented split pane</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//abstractBinding">abstract super element of all binding elements</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//uielement/hint">Desired size for the component(width,height)</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//hgroup">This element allows to create horizontally oriented SWT Group</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//viewer">Viewer element is abstract super element of all viewers. Currently it defines few attributes but later we expect that it is functionality will be enchanted.</documentation>
+    <documentation icon="images/clcl16/spinner_obj.gif" ref="http://jetface.org/JetFace1.0//spinner">allows to add spinner editor to parent container</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//uielement/span">allows to setup how many cells container will take in container with automatic layout</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//realm">allows to specify a realm for the given binding</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//uielement/indent">allows to setup indentation(x indentation, y indentation) of a component in the container will take in container with automatic layout </documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//uielement/background">background attribute allows to specify background color from JFace color registry that will be used for the element</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//uielement/enablement">allows to specify expression that controls the should be given element enabled or not</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//tree/property">property attribute should point on id of the property which will be used to determine children of the given element</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//remove-selection">allows to remove selected elements from the parent viewer</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//text/wrapText">if wrap text attribute is specified to  'true' control will wrap text</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//uielement/minimumSize">Minimum size for the component(width,height)</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//binded-action">allows to contribute element</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//delete-selected">allows to delete selected data objects</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//setting">abstract super element for settings</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0//stringMember">Allows to add string value to the realm</documentation>
+    <documentation icon="images/clcl16/form_obj.gif" ref="http://jetface.org/JetFace1.0//form">allows to create form</documentation>
+</documentation>

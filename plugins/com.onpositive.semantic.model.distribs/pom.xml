@@ -1,0 +1,21 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.onpositive.semantic.model.distribs</groupId>
+  <artifactId>com.onpositive.semantic.model.distribs</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <modules>
+
+  <module>../com.onpositive.semantic.model.core</module>
+  <module>../com.onpositive.semantic.model.java</module>
+  <module>../com.onpositive.semantic.model.java.tests</module>
+  <module>../com.onpositive.semantic.model.expressions</module>
+  <module>../com.onpositive.semantic.model.bindings</module>
+  <module>../com.onpositive.commons.platform</module>
+  <module>../com.onpositive.semantic.model.ui.generic</module>
+  <module>../com.onpositive.semantic.model.tree</module>
+  </modules>
+  <scm>
+  	<url>https://svn.codespot.com/a/eclipselabs.org/semanticui/stable-version/com.onpositive.semantic.model.distribs</url>
+  </scm>
+</project>

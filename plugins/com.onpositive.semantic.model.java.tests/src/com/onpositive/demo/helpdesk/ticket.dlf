@@ -1,0 +1,19 @@
+<form xmlns="http://jetface.org/JetFace1.0/" caption="Ticket">
+	<model class="com.onpositive.demo.helpdesk.Ticket">
+	</model>
+	<combo bindTo="Type"/>
+	<group caption="General">
+	<string bindTo="title" hint="500,*" />
+	</group>
+	<group caption="Attributes">
+	<hc>
+	
+	<combo bindTo="priority"/>	
+	</hc>
+	</group>
+	<group  caption="Summary" >
+	
+	<text bindTo="details.summary" grabHorizontal="true"/>
+	
+	</group>
+</form>

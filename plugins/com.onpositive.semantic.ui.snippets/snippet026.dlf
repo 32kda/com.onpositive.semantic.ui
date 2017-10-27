@@ -1,0 +1,12 @@
+<form xmlns="http://jetface.org/JetFace1.0/" grabVertical="true" showValueInTitle="false" caption="Rich Text Sample">
+<richtext bindTo="textStr"  xmlns="http://jetface.org/JetFace1.0/richtext" richTextConfigurator="com.onpositive.richtexteditor.xml.RichTextSpellcheckConfigurator" useExternalToolbar="true" >
+	<actions >
+		<boldAction />
+		<italicAction />
+		<underlineAction />
+		<openFileAction />
+		<customAction className="com.onpositive.semantic.ui.snippets.TestAction" />
+	</actions>
+</richtext> 
+<button id="print" caption="Print" bindTo="print" />
+</form>

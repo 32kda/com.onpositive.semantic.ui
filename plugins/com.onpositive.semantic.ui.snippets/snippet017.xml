@@ -1,0 +1,11 @@
+<form xmlns="http://jetface.org/JetFace1.0/" grabVertical="true">	
+    <label bindTo="DescriptionText" richContent="true"/>
+    <string bindTo="name"/>
+    <combo bindTo="position" />
+    <colorSelector xmlns="http://jetface.org/JetFace1.0/" bindTo="rgb"/>    
+    <string bindTo="age"/>    
+    <hc grabHorizontal="true" hAlign="right" grabVertical="true" vAlign="bottom" margin="0,0,0,0">
+        <button bindTo="ok"/>
+        <button bindTo="cancel"/>
+    </hc>
+</form>

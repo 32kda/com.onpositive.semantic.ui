@@ -1,0 +1,5 @@
+1)Table/Tree controls with columns and multiple filters/table editing support.
+2)Universal Editor extension point/editing actions/dialogs
+3)Good configurable container
+4)Filters extension point, Filter Panel
+5)Command support, Undo Support,Add/Remove/Edit actions

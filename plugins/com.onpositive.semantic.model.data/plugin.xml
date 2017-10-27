@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+ <extension
+         point="com.onpositive.commons.platform.namespaces">
+      <namespace
+            name="DataModel"
+            partDefinitionFile="schema/modelLanguage.dlm"
+            url="http://www.jetface.org/datamodel">        
+      </namespace>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.adapters">
+      <factory
+            adaptableType="com.onpositive.semantic.model.data.IEntry"
+            class="com.onpositive.semantic.model.data.EntryAdapterFactory">
+         <adapter
+               type="com.onpositive.semantic.model.api.property.IPropertyProvider">
+         </adapter>
+      </factory>      
+   </extension>   
+
+</plugin>

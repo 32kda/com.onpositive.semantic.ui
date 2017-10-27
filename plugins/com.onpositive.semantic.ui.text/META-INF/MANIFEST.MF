@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Text Plug-in
+Bundle-SymbolicName: com.onpositive.semantic.ui.text;singleton:=true
+Bundle-Version: 1.0.3
+Bundle-Vendor: ONPOSITIVE
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Require-Bundle: 
+ org.eclipse.jface.text,
+ org.eclipse.swt,
+ org.eclipse.jface,
+ org.eclipse.ui.workbench.texteditor,
+ org.eclipse.core.runtime,
+ org.eclipse.ui,
+ com.onpositive.commons.spelling.engine,
+ org.eclipse.ui.editors,
+ org.eclipse.ui.workbench.texteditor
+Import-Package: org.eclipse.ui.texteditor
+Export-Package: com.onpositive.semantic.ui.text

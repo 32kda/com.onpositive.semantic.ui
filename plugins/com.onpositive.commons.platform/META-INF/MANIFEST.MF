@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Core Plug-in
+Bundle-SymbolicName: com.onpositive.commons.platform;singleton:=true
+Bundle-Version: 1.3.9.qualifier
+Bundle-Vendor: onpositive
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: com.onpositive.commons.platform.configuration,
+ com.onpositive.commons.platform.configuration.empty,
+ com.onpositive.commons.platform.registry,
+ com.onpositive.commons.utils,
+ com.onpositive.commons.xml.language,
+ com.onpositive.core.runtime
+Eclipse-BuddyPolicy: registered

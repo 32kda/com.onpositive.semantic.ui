@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0/widgets/dialog">&lt;html&gt;
+&lt;body&gt;
+&lt;P  style="margin: 4;"align = "left"&gt;Allows to create titled dialog&lt;/P&gt;
+&lt;/body&gt;&lt;/html&gt;</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0/widgets/popupDialog">&lt;html&gt;
+&lt;body&gt;
+&lt;P  style="margin: 4;"align = "left"&gt;Allows to create Popup Dialog&lt;/P&gt;
+&lt;/body&gt;&lt;/html&gt;</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0/widgets/formDialog">&lt;html&gt;
+&lt;body&gt;
+&lt;P  style="margin: 4;"align = "left"&gt;Allows to create Form Dialog&lt;/P&gt;
+&lt;/body&gt;&lt;/html&gt;</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0/widgets/wizardPage">&lt;html&gt;
+&lt;body&gt;
+&lt;P  style="margin: 4;"align = "left"&gt;Allows to create wizard page in wizard&lt;/P&gt;
+&lt;/body&gt;&lt;/html&gt;</documentation>
+    <documentation icon="" ref="http://jetface.org/JetFace1.0/widgets/wizard">&lt;html&gt;
+&lt;body&gt;
+&lt;P  style="margin: 4;"align = "left"&gt;Allows to create wizard &lt;/P&gt;
+&lt;/body&gt;&lt;/html&gt;</documentation>
+</documentation>

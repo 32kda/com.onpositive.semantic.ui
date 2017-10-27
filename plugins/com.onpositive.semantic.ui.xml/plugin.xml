@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="com.onpositive.commons.platform.namespaces">
+      <namespace
+            description="core namespace of jetface elements"
+            name="jetface"
+            partDefinitionFile="schema/uixml.dlm"
+            url="http://jetface.org/JetFace1.0/">                             
+       </namespace>
+       <namespace
+            description="core namespace of jetface elements"
+            name="jetface widgets"
+            partDefinitionFile="schema/widgets.dlm"
+            url="http://jetface.org/JetFace1.0/widgets">                             
+       </namespace>
+   </extension>
+   <extension
+         point="com.onpositive.semantic.model.uiengine">
+      <engineImpl
+            clazz="com.onpositive.semantic.ui.xml.UIElementFactory1">
+      </engineImpl>
+   </extension>
+</plugin>

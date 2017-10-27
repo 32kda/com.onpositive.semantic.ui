@@ -1,0 +1,16 @@
+<composite-editor xmlns="http://jetface.org/JetFace1.0/" >
+	<model >
+		<validator value="com.onpositive.semantic.generator.model.CanditateValidator" />
+        <binding id="creator" path="creator" enablement="used" >
+            <realm provider="com.onpositive.semantic.generator.model.CandidateConfigurationListElement$CreatorRealmProvider"/>            
+        </binding>
+        <binding path="curCandidate.caption" id="candidateCaption" enablement="used" />
+        <binding id="used" path="used"/>
+    </model>
+    <hc>
+		<checkbox caption=" " bindTo="used"/>		
+		<label bindTo="curCandidate.name" />
+		<string caption=" " bindTo="candidateCaption" />
+		<combo caption=" " bindTo="creator"  />
+	</hc>
+</composite-editor>

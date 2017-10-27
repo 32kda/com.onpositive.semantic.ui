@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension-point id="modelDefinition" name="Model Definition" schema="schema/modelDefinition.exsd"/>
+   <extension-point id="documentSystem" name="Document System" schema="schema/documentSystem.exsd"/>
+   <extension-point id="storageProtocol" name="Storage Protocol Definition" schema="schema/storageProtocol.exsd"/>
+   <extension
+         point="com.onpositive.commons.platform.namespaces">
+      <namespace
+            name="DataModel"
+            partDefinitionFile="schema/modelLanguage.dlm"
+            url="http://www.jetface.org/datamodel">        
+      </namespace>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.adapters">
+      <factory
+            adaptableType="com.onpositive.datamodel.core.IEntry"
+            class="com.onpositive.datamodel.model.EntryAdapterFactory">
+         <adapter
+               type="com.onpositive.semantic.model.api.property.IPropertyProvider">
+         </adapter>
+      </factory>
+      
+   </extension>
+   <extension
+         point="com.onpositive.semantic.model.realmProvider">
+      <realmProvider
+            class="com.onpositive.datamodel.model.DocumentSystemRealmProvider"
+            id="com.onpositive.documentSystem">
+      </realmProvider>
+   </extension>
+   <extension
+         point="com.onpositive.semantic.model.rdf.storageProtocol">
+      <storageProtocol
+            class="com.onpositive.datamodel.impl.MetadataProtocol"
+            id="metadata"
+            name="Metadata"></storageProtocol>
+      <storageProtocol
+            class="com.onpositive.datamodel.impl.FileProtocol"
+            id="file"
+            name="FileSystem">
+      </storageProtocol>
+   </extension>
+</plugin>

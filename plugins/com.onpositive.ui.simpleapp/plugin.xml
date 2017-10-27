@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         name="Test application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="com.onpositive.ui.simpleapp.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="Perspective"
+            class="com.onpositive.ui.simpleapp.Perspective"
+            id="com.onpositive.ui.simpleapp.perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            name="View"
+            class="com.onpositive.ui.simpleapp.View"
+            id="com.onpositive.ui.simpleapp.view">
+      </view>
+      <view
+            class="com.onpositive.ui.simpleapp.View2"
+            id="com.onpositive.ui.simpleapp.view2"
+            name="Sample XML View"
+            restorable="true">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="com.onpositive.ui.simpleapp.perspective">
+         <view
+               standalone="true"
+               minimized="false"
+               relative="org.eclipse.ui.editorss"
+               relationship="left"
+               id="com.onpositive.ui.simpleapp.view">
+         </view>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu">
+         <menu
+               label="File">
+            <command
+                  commandId="org.eclipse.ui.file.exit"
+                  label="Exit">
+            </command>
+         </menu>
+      </menuContribution>
+   </extension>
+
+</plugin>

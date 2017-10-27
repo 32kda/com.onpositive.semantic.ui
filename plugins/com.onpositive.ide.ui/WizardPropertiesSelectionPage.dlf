@@ -1,0 +1,26 @@
+<wizard xmlns="http://jetface.org/JetFace1.0/widgets" >	
+	<wizardPage message="Select common properties" title="Common properties" >		
+		<composite-editor xmlns="http://jetface.org/JetFace1.0/" >
+			<model >
+				<binding id="savePath" path="savePath" required="true"/>
+			</model>
+			<vc>
+				<combo caption="Window style" bindTo="curMainWindowModel"/>
+				<hc margin="5,0,-9,0"><string caption="Save XML file to:" buttonSelector="com.onpositive.ide.ui.generation.ChooseFileButtonSelector" bindTo="savePath" /></hc>
+			</vc>
+		</composite-editor>
+	</wizardPage>
+	<wizardPage message="Select properties to edit" title="Properties" >
+		<composite-editor xmlns="http://jetface.org/JetFace1.0/" >
+			<table bindTo="properties" useSelectionAsValue="false" enableDirectEdit="true">
+				<columns >
+					<column id="Used" />
+					<column id="creator"/>
+					<column id="curCandidate.name"/>
+					<column id="curCandidate.caption"/>					
+				</columns>
+			</table>
+			<!-- <customEditor xmlns="http://jetface.org/JetFace1.0/custom" bindTo="properties" /> -->			
+		</composite-editor>
+	</wizardPage>	
+</wizard>

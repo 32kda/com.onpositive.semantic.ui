@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildpath>
+	<buildpathentry external="true" kind="lib" path="C:/eclipse-rcp-indigo-SR2-win32-x86_64%20(1)/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.6.4.v201203300216r37/appengine-java-sdk-1.6.4/lib/shared/appengine-local-runtime-shared.jar"/>
+	<buildpathentry external="true" kind="lib" path="C:/eclipse-rcp-indigo-SR2-win32-x86_64%20(1)/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.6.4.v201203300216r37/appengine-java-sdk-1.6.4/lib/opt/user/appengine-api-labs/v1/appengine-api-labs.jar"/>
+</buildpath>

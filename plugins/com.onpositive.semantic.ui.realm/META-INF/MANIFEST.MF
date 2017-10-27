@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Realm Plug-in
+Bundle-SymbolicName: com.onpositive.semantic.ui.realm;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Vendor: ONPOSITIVE
+Require-Bundle: com.onpositive.semantic.model,
+ org.eclipse.ui,
+ com.onpositive.commons.platform,
+ org.eclipse.core.runtime,
+ org.eclipse.ui.forms,
+ com.onpositive.commons.platform.equinox,
+ com.onpositive.semantic.ui.swt;bundle-version="1.3.9"
+Export-Package: com.onpositive.semantic.realm,
+ com.onpositive.semantic.realm.registries,
+ com.onpositive.semantic.ui.realm.viewer
+Bundle-Activator: com.onpositive.semantic.realm.Activator
+Bundle-ActivationPolicy: lazy

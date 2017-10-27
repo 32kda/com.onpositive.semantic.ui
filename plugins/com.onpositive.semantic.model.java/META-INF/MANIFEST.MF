@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Java
+Bundle-SymbolicName: com.onpositive.semantic.model.java
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: ONPOSITIVE
+Eclipse-RegisterBuddy: com.onpositive.semantic.model.core
+Eclipse-BuddyPolicy: dependent
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: com.onpositive.semantic.model.core;bundle-version="1.0.0"
+Export-Package: com.onpositive.semantic.model.api.property.java,
+ com.onpositive.semantic.model.api.property.java.annotations,
+ com.onpositive.semantic.model.api.property.java.annotations.meta

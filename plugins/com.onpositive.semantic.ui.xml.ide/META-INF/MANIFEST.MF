@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Ide Plug-in
+Bundle-SymbolicName: com.onpositive.semantic.ui.xml.ide
+Bundle-Version: 1.0.0
+Bundle-Vendor: ONPOSITIVE
+Bundle-RequiredExecutionEnvironment: J2SE-1.5

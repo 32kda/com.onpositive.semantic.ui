@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension-point id="columnDefinition" name="Column Definition" schema="schema/columnDefinition.exsd"/>
+   <extension-point id="viewerDefinition" name="Viewer Definition" schema="schema/viewerDefinition.exsd"/>
+   <extension-point id="filterDefinition" name="Filter Definition" schema="schema/filterDefinition.exsd"/>
+   <extension-point id="viewerTabDefinition" name="Viewer Tab Definition" schema="schema/viewerTabDefinition.exsd"/>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            allowMultiple="false"
+            class="com.onpositive.semantic.ui.realm.ViewPart1"
+            id="com.onpositive.semantic.ui.realm.view1"
+            name="name"
+            restorable="true">
+      </view>
+   </extension>
+   <extension
+         point="com.onpositive.semantic.model.images">
+      <image
+            id="com.onpositive.semantic.ui.realm.image1"
+            imageDescriptorProvider="com.onpositive.semantic.realm.registries.ColumnConfigurationImageProvider"
+            name="name"
+            targetClass="com.onpositive.semantic.realm.registries.ColumnConfiguration">
+      </image>
+      <image
+            id="com.onpositive.semantic.ui.realm.columnDefault"
+            image="icons/generic_element.gif"
+            name="name">
+      </image>
+   </extension>
+
+</plugin>

@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Android
+Bundle-SymbolicName: com.onpositive.semantic.ui.android
+Bundle-Version: 1.0.0.qualifier
+Export-Package: com.onpositive.semantic.ui.android,
+ com.onpositive.semantic.ui.workbench.providers
+Require-Bundle: com.onpositive.commons.platform;bundle-version="1.3.9",
+ com.onpositive.semantic.model;bundle-version="1.3.9",
+ com.onpositive.semantic.model.ui.generic;bundle-version="1.0.0",
+ com.onpositive.semantic.model.java;bundle-version="1.0.0",
+ com.onpositive.semantic.model.tree;bundle-version="1.0.0",
+ com.onpositive.semantic.model.expressions;bundle-version="1.0.0"

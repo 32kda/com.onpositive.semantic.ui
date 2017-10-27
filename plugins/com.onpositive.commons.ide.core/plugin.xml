@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension-point id="documentationBundles" name="Namespace Documentation" schema="schema/documentationBundles.exsd"/>
+   <extension-point id="typeValidator" name="Type Validator" schema="schema/typeValidator.exsd"/>
+   <extension-point id="typeCompletionProvider" name="Provides Code Completion for Types" schema="schema/typeCompletionProvider.exsd"/>
+   <extension-point id="uiPropertyElementCreators" name="UIPropertyElementCreators" schema="schema/uiPropertyElementCreators.exsd"/>
+   <extension-point id="typeHyperlinkProvider" name="Type Hyperlink Provider" schema="schema/typeHyperlinkProvider.exsd"/>
+   
+   <extension
+         id="uiPropertyElementCreators"
+         name="UIPropertyElementCreators"
+         point="com.onpositive.commons.ide.core.uiPropertyElementCreators">
+      <creator
+            bindingConfiguratorClass="com.onpositive.semantic.generator.model.StandartBindingConfigurator"
+            description="&lt;richtext&gt;: rich text editor"
+            elementConfiguratorClass="com.onpositive.semantic.generator.model.RichtextElementConfigurator"
+            name="string_richtext"
+            priority="2"
+            typeName="java.lang.String">
+      </creator>
+      <creator
+            bindingConfiguratorClass="com.onpositive.semantic.generator.model.StandartBindingConfigurator"
+            description="&lt;string&gt;: simple one-line input string (for int)"
+            elementConfiguratorClass="com.onpositive.semantic.generator.model.StringElementConfigurator"
+            name="int_string"
+            priority="2"
+            typeName="int">
+      </creator>
+      <creator
+            bindingConfiguratorClass="com.onpositive.semantic.generator.model.StandartBindingConfigurator"
+            class="com.onpositive.commons.ide.core.Creator1"
+            description="&lt;string&gt;: simple one-line input string (for int)"
+            elementConfiguratorClass="com.onpositive.semantic.generator.model.StringElementConfigurator"
+            name="int"
+            priority="1"
+            typeName="int">
+      </creator>
+      <creator
+            bindingConfiguratorClass="com.onpositive.semantic.generator.model.StandartBindingConfigurator"
+            class="com.onpositive.commons.ide.core.Creator1"
+            description="&lt;string&gt;: simple one-line input string"
+            elementConfiguratorClass="com.onpositive.semantic.generator.model.StringElementConfigurator"
+            name="string"
+            priority="1"
+            typeName="java.lang.String">
+      </creator>
+      <creator
+            bindingConfiguratorClass="com.onpositive.semantic.generator.model.StandartBindingConfigurator"
+            class="com.onpositive.commons.ide.core.Creator1"
+            description="&lt;spinner&gt;: Spinner input"
+            elementConfiguratorClass="com.onpositive.semantic.generator.model.SpinnerElementConfigurator"
+            name="spinner"
+            priority="1"
+            typeName="int">
+      </creator>
+   </extension>
+</plugin>

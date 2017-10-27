@@ -1,0 +1,21 @@
+!expandable,
+!hasBorder,(done)
+
+uielement
+{
+	gridy
+}
+ListEnumeratableValueSelector{	
+	setTooltipInformationControlCreator;
+	clusterizationPointProviders;
+}
+OneLineTextElement:
+{
+	ContentAssistLabelProvider;
+	ContentAssistProposalProvider;
+	ContentAssistRole;
+	AutoActivationCharacters;
+	ContentAssistEnabled;
+	selector;
+}
+Add events: mouse,keyboard,focus,add,remove,create,dispose

@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Data
+Bundle-SymbolicName: com.onpositive.semantic.model.data;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.onpositive.semantic.model.data.Activator
+Bundle-Vendor: ONPOSITIVE
+Require-Bundle: org.eclipse.core.runtime,
+ com.onpositive.semantic.model;bundle-version="1.0.0",
+ com.onpositive.commons.platform;bundle-version="1.0.0",
+ com.onpositive.semantic.ui.swt;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ActivationPolicy: lazy
+Export-Package: com.onpositive.semantic.model.data

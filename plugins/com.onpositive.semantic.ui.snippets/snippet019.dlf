@@ -1,0 +1,47 @@
+<composite-editor xmlns="http://jetface.org/JetFace1.0/"
+	margin="0,0,0,0">
+	<vc>
+		
+		<toolbar>
+			<binded-action bindTo="new" image="add" disabled-image="add" />
+			<binded-action bindTo="remove" image="delete"
+				disabled-image="deleted" />
+		</toolbar>
+		<splitter margin="0,0,0,0" weights="2,3">
+			<vc margin="0,0,0,0">
+				<list>
+				</list>
+			</vc>			
+			
+			<vc>
+				<group caption="Selected Style:">
+					<hc margin="0,0,0,0">
+						
+						<string caption="Font Face:" readonly="true" bindTo="data" />
+						<button caption="Change..." />
+					</hc>
+					<checkbox caption="Has Colors" />
+					<hc indent="5,0">
+						<label caption="Foreground Color:" vAlign="center" />
+						<button caption=" " />
+						
+					</hc>
+					<hc indent="5,0">
+						<label caption="Background Color:" vAlign="center" indent="-1,0" />
+						<button caption=" " />
+					</hc>
+				</group>
+				<group caption="Preview" grabVertical="true" minimumSize="200,80">
+					<vc>
+						<label caption="Sample Text" font="banner" vAlign="center"
+							hAlign="center" grabHorizontal="true" grabVertical="true" />
+					</vc>
+				</group>
+			</vc>
+		</splitter>
+		<hc hAlign="right">
+			<button caption="Ok" />
+			<button caption="Cancel" />
+		</hc>
+	</vc>
+</composite-editor>

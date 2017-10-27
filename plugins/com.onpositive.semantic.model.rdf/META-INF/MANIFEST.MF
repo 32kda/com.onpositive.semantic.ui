@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Core Plug-in
+Bundle-SymbolicName: com.onpositive.semantic.model.rdf;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Vendor: onpositive
+Require-Bundle: org.eclipse.core.runtime,
+ com.onpositive.semantic.model,
+ com.onpositive.commons.platform,
+ com.onpositive.semantic.ui.swt,
+ com.onpositive.commons.platform.equinox;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ActivationPolicy: lazy
+Export-Package: com.onpositive.datamodel.core,
+ com.onpositive.datamodel.impl,
+ com.onpositive.datamodel.impl.storage,
+ com.onpositive.datamodel.model,
+ com.onpositive.datastorage.tests
+Bundle-Activator: com.onpositive.datamodel.core.DataModelPlugin

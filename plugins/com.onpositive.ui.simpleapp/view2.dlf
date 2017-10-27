@@ -1,0 +1,12 @@
+<composite-editor xmlns="http://jetface.org/JetFace1.0/" >
+	<model autoCommit="true">
+		<binding autoCommit="true" id="text" caption="Text" path="text"/>
+	</model>
+	<vc>
+		<string caption="Text" bindTo="text" />
+		<hc hAlign="center">
+			<button grabHorizontal="true" enablement="getLength() > 5" caption="OK" bindTo="okPressed" />
+			<button grabHorizontal="true" caption="Cancel" bindTo="cancelPressed" />
+		</hc>
+	</vc>
+</composite-editor>

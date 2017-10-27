@@ -1,0 +1,32 @@
+<form xmlns="http://jetface.org/JetFace1.0/" caption="Tickets">
+	<model class="com.onpositive.demo.helpdesk.Tickets">
+		<defaultValue value="new" />
+	</model>
+	<hc>
+	<pattern-filter targetId="tickets" caption="Filter:"/>
+	</hc>
+	<table bindTo="tickets" grabVertical="true" id='tickets' grabHorizontal="true">
+		<actions >
+			<create-member exportAs="new"/>
+			<remove-selection exportAs="del"/>
+			<edit-selection />
+			<action-separator />
+			<groupBy propertyId="type" />
+			<groupBy propertyId="status" />
+			<groupBy propertyId="priority" />
+			<groupBy propertyId="owner" />
+			<groupBy propertyId="lastModified" />
+			<action-separator />			
+		</actions>
+		<columns >
+			<column id="type" resizeWeight="1" initialWidth="80" imageFromBase="true"/>
+			<column id="title" resizeWeight="2" />
+			<column id="status" resizeWeight="1" initialWidth="80"/>
+			<column id="priority" resizeWeight="1" initialWidth="80"/>
+			<column id="owner" resizeWeight="1" initialWidth="80"/>
+			<column id="lastModified" resizeWeight="1" initialWidth="80" caption="Changed"/>			
+		</columns>
+	</table>
+	<button bindTo="tickets.new" caption="New"/>
+	<button bindTo="tickets.del" caption="Remove"/>
+</form>

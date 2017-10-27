@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="BuildJar" basedir="." default="jar">
+
+    <property name="src.dir" value="src"/>
+    <property name="classes.dir" value="bin"/>
+    <property name="jar.name" value="semantic.model.core"/>
+    <property name="jar.path" value="../com.onpositive.fighterspedia/libs/"/>
+     <property name="jar.path1" value="../com.onpositive.metaweb.client/war/WEB-INF/lib/"/>
+     <property name="jar.path2" value="../com.onpositive.dweb/war/WEB-INF/lib/"/>
+     
+    <target name="clean" description="Delete all generated files">
+       <!--  <delete dir="${classes.dir}" failonerror="false"/> -->
+        <delete file="${ant.project.name}.jar"/>
+    </target>
+
+    <target name="jar" description="JARs the Task" >
+<!--         <mkdir dir="${classes.dir}"/>
+        <javac srcdir="${src.dir}" destdir="${classes.dir}"/> -->
+        <jar destfile="${jar.path}${jar.name}.jar" basedir="${classes.dir}"/>
+         <jar destfile="${jar.path1}${jar.name}.jar" basedir="${classes.dir}"/>
+         <jar destfile="${jar.path2}${jar.name}.jar" basedir="${classes.dir}"/>
+    </target> 
+
+</project>

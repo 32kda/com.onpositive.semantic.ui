@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension-point id="configurationPersistence" name="Persistence to/from abstract configuration objects" schema="schema/configurationPersistence.exsd"/>
+   <extension-point id="namespaces" name="XML NameSpace Contribution" schema="schema/namespaces.exsd"/>
+   <extension-point id="adapters" name="Adapters" schema="schema/adapters.exsd"/>
+   <extension-point id="namespaceImplementation" name="Namespace implementation" schema="schema/namespaceImplementation.exsd"/>
+   <extension-point id="expressionController" name="Expression controller" schema="schema/expressionController.exsd"/>
+   <extension-point id="typeConversion" name="Type conversion" schema="schema/typeConversion.exsd"/>
+   <extension
+         point="com.onpositive.commons.platform.configurationPersistence">
+      <persistence
+            class="com.onpositive.commons.platform.configuration.DefaultConfigurationPersistenceDelegate"
+            name="Default Persistence Delegate"
+            objectClass="java.lang.Object">
+      </persistence>
+	  <persistence
+            class="com.onpositive.commons.platform.configuration.MapPersistentDelegate"
+            name="Map Persistence Delegate"
+            objectClass="java.util.Map">
+      </persistence>      
+   </extension>
+   
+
+</plugin>

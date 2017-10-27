@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Editor Plug-in
+Bundle-SymbolicName: com.onpositive.commons.ide.core;singleton:=true
+Bundle-Version: 1.0.1.qualifier
+Bundle-Vendor: onpositive
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.jface.text,
+ org.eclipse.ui.editors,
+ org.eclipse.pde,
+ org.eclipse.pde.core,
+ org.eclipse.core.resources,
+ com.onpositive.commons.platform,
+ com.onpositive.semantic.model,
+ org.eclipse.jdt.core
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ActivationPolicy: lazy
+Export-Package: 
+ com.onpositive.commons.namespace.ide.ui.editors.xml.model,
+ com.onpositive.commons.namespace.ide.ui.internal.core.text,
+ com.onpositive.semantic.generator.model,
+ com.onpositive.semantic.language.model
+

@@ -1,0 +1,13 @@
+<popupDialog xmlns="http://jetface.org/JetFace1.0/widgets" >
+	<composite-editor bindTo="this" xmlns="http://jetface.org/JetFace1.0/">
+	<model autoCommit="false" >
+		<composite-action  id="commit">
+		    <commit/>
+		    <close-shell />
+	    </composite-action>
+	</model>
+	<text bindTo="this" multiline="true" wrapText="true" minimumSize="0,200" caption="Value"/>
+	<button caption="OK" bindTo="commit" enablement="!@error"/>
+	</composite-editor>
+</popupDialog>
+	

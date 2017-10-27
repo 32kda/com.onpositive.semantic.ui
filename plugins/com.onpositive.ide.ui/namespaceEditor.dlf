@@ -1,0 +1,229 @@
+ <form xmlns="http://jetface.org/JetFace1.0/" caption="Namespace"
+	showValueInTitle="true">
+	<model modelExtension="false"
+		class="com.onpositive.semantic.language.model.NameSpaceContributionModel">
+		<binding id="currentElement" caption="Properties of selected element"
+			readonly="false" addParentToScope="false"
+			class="com.onpositive.semantic.language.model.ElementModel">
+			<binding id="Abstract" enablement="^currentElement" />
+			<binding id="AllowMultiple" enablement="^currentElement" />
+			<binding id="Childs" enablement="^currentElement">
+				<content-assist
+					value="com.onpositive.commons.namespace.ide.ui.ChildElementContentAsisstProvider" />
+			</binding>
+			<binding id="SuperElement" enablement="^currentElement">
+				<content-assist
+					value="com.onpositive.commons.namespace.ide.ui.ChildElementContentAsisstProvider" />
+			</binding>
+			<binding id="Handler" />
+			
+			<binding id="Name" caption="Name" />
+			<binding id="Url" caption="URL" />
+			<binding id="Group" caption="Group">
+				<realm
+					value="com.onpositive.commons.namespace.ide.ui.core.GroupRealmProvider" />
+			</binding>
+		</binding>
+		<binding id="Name" caption="Name" />
+		<binding id="Url" caption="URL" />
+		<binding id="Description" caption="Description" />
+		<binding id="currentAttribute" readonly="false"
+			addParentToScope="false"
+			class="com.onpositive.semantic.language.model.AttributeModel">
+			<binding id="Type" caption="Type">
+				<realm
+					value="com.onpositive.commons.namespace.ide.ui.core.TypeRealmProvider" />
+			</binding>
+			<binding id="TypeSpecialization" enablement="currentAttribute.TypeSpecializationEnabled">
+				<content-assist
+					value="com.onpositive.commons.namespace.ide.ui.TypeSpecializationContentAssistConfiguration" />
+				<validator
+					value="com.onpositive.commons.namespace.ide.ui.TypeSpecializationValidator" />
+			</binding>
+			<binding id="TypeSpecializationDescription" readonly="true" />
+			
+			<binding id="Group" caption="Group">
+				<realm
+					value="com.onpositive.commons.namespace.ide.ui.core.GroupRealmProvider" />
+			</binding>
+		</binding>
+	</model>
+	<actions toToolbar="true">
+		<undoredo-block />
+		<action caption="Generate Documentation"
+			class="com.onpositive.commons.namespace.ide.ui.GenerateDocumentationActionDelegate"
+				image="com.onpositive.commons.namespace.ide.ui.gen-doc" />
+
+	</actions>
+	<splitter horizontal="true">
+		<vc>
+			<section bindTo="this" caption="General" expanded="true"
+				showValueInTitle="false">
+				<vc>
+					<string bindTo="Name" />
+					<string bindTo="Url" />
+					<string bindTo="Description" />
+				</vc>
+			</section>
+			<section caption="Members" bindTo="this" expanded="true"
+				showValueInTitle="false" grabVertical="true">
+				<vc margin="0,0,0,0" grabVertical="true">
+					<pattern-filter caption="Filter elements" targetId="elements" />
+					<list bindTo="Contributions" id="elements" bindSelectionTo="currentElement"
+						directEditProperty="Name" enableDirectEdit="true"
+						elementRole="com.onpositive.commons.namespace.ide.ui.group">
+						<actions toToolbar="true" toMenu="true">
+							<create-member caption="Add Element"
+								image="com.onpositive.semantic.ui.images.add" definitionId="com.six.ui.test.command1"
+								objectClass="com.onpositive.semantic.language.model.ElementModel" />
+							<edit-selection caption="Rename"
+								image="com.onpositive.commons.namespace.ide.ui.rename" />
+							<remove-selection definitionId="org.eclipse.ui.edit.delete"
+								caption="Remove Element" disabled-image="com.onpositive.semantic.ui.images.deleted"
+								image="com.onpositive.semantic.ui.images.delete" />
+							
+							<toggle-filter caption="Hide Abstract" expression="!Abstract"
+								image="com.onpositive.commons.namespace.ide.ui.hideAbstract" />
+							
+							<groupBy propertyId="Group" caption="Group by attribute group"
+								image="com.onpositive.ide.ui.category.image" />
+							<groupBy caption="Group By Inheritance" propertyId="SuperElements"
+								propogate="true" image="com.onpositive.ide.ui.hierarchy" />
+							
+						</actions>
+					</list>
+				</vc>
+			</section>
+		</vc>
+		<stack>
+			<vc enablement="^currentElement">
+				<section caption="Details of the selected member" expanded="true"
+					bindTo="currentElement" showValueInTitle="false" enablement="^currentElement">
+					<vc>
+						<string caption="Allows children" bindTo="Childs" />
+						<string caption="Extends" bindTo="SuperElement" />
+						<string caption="Model Class" bindTo="Handler"
+							/>
+						<string caption="Group" bindTo="Group"
+							contentAssistRole="com.onpositive.commons.namespace.ide.ui.group" />
+						<hc margin="0,0,0,0">
+							<checkbox caption="Is Abstract" bindTo="Abstract" />
+							<checkbox caption="Allows multiples" bindTo="AllowMultiple" />
+						</hc>
+					</vc>
+				</section>
+				<ctab-folder hasBorder="true" margin="5,5,5,5"
+					grabVertical="true">
+					<composite-editor caption="Attributes of the selected member"
+						bindTo="currentElement" indent="0,10" enablement="^currentElement">
+						<vc margin="0,0,0,10" grabVertical="true">
+							<toolbar grabHorizontal="true" hAlign="fill" />
+							<vc margin="0,0,0,0" grabVertical="true">
+								<table bindTo="AllNotRestrictedProperties"
+									enableDirectEdit="true" bindSelectionTo="parent.currentAttribute"
+									id="properties" grabVertical="true">
+									<actions toToolbar="true" toMenu="true">
+										<create-member caption="Add Attribute"
+											image="com.onpositive.semantic.ui.images.add" definitionId="com.six.ui.test.command1"
+											objectClass="com.onpositive.semantic.language.model.AttributeModel" />
+
+										<remove-selection definitionId="org.eclipse.ui.edit.delete"
+											caption="Remove Attribute" disabled-image="com.onpositive.semantic.ui.images.deleted"
+											image="com.onpositive.semantic.ui.images.delete" />
+
+										<edit-selection caption="Rename"
+											image="com.onpositive.commons.namespace.ide.ui.rename" />
+										<toggle-filter caption="Hide Inherited"
+											class="com.onpositive.commons.namespace.ide.ui.InheritedAttributesFilter"
+											image="com.onpositive.commons.namespace.ide.ui.hideInherited" />
+										<groupBy propertyId="Group" caption="Group by attribute group"
+											image="com.onpositive.ide.ui.category.image" />
+										<groupBy caption="Group By declaring element"
+											propertyId="Owner" image="com.onpositive.ide.ui.hierarchy" />
+										<doNotGroup caption="Do not Group elements" image="com.onpositive.ide.ui.change" />
+									</actions>
+
+									<columns>
+										<column caption="Name" id="Name" resizeWeight="4"
+											imageFromBase="true" textFromBase="true"
+											role="com.onpositive.commons.namespace.ide.ui.group" />
+										<column caption="Type" id="Type" resizeWeight="3" />
+										<column caption="Required" id="Required" resizeWeight="2"
+											role="checkbox" />
+										<column caption="Translatable" id="Translatable"
+											resizeWeight="2" role="checkbox" />
+									</columns>
+								</table>
+
+							</vc>
+							<section bindTo="parent.currentAttribute" caption="Selected Attribute"
+								expanded="true" grabVertical="false" hint="-1,200"
+								enablement="^parent.currentAttribute">
+								<vc margin="0,0,0,0">
+									<hc>
+									<string bindTo="Name" caption="Name" />
+									<checkbox bindTo="ignoreOnValidation" caption="No direct handler"/>
+									</hc>
+									<hc margin="1,2,-7,2">
+										<string bindTo="Group" caption="Group"
+											contentAssistRole="com.onpositive.commons.namespace.ide.ui.group"
+											role="com.onpositive.commons.namespace.ide.ui.group" />
+										<checkbox bindTo="Required" caption="Required" />
+										<checkbox bindTo="Translatable" caption="Translatable" />
+										
+									</hc>
+									<hc margin="1,2,-7,2">
+										<string bindTo="Type" caption="Type" />
+										<string bindTo="TypeSpecialization" caption="Type Specialization" />
+									</hc>
+									<stack>
+										<hc margin="1,2,-7,2" enablement="^this and TypeSpecializationEnabled">
+											<label caption="Type specialization:" />
+											<label bindTo="TypeSpecializationDescription"
+												grabHorizontal="true" hAlign="fill" grabVertical="true"
+												vAlign="fill" minimumSize="-1,30"/>
+										</hc>
+									</stack>
+								</vc>
+							</section>
+						</vc>
+					</composite-editor>
+					<composite-editor caption="Restricted Attributes from super elements"
+						bindTo="currentElement" indent="0,10" enablement="^currentElement">
+						<toolbar grabHorizontal="true" hAlign="fill" />
+						<table bindTo="RestrictedAttributes" enableDirectEdit="false"
+							bindSelectionTo="parent.currentAttribute" id="restricted">
+
+							<actions toToolbar="true" toMenu="true">
+								<action
+									class="com.onpositive.commons.namespace.ide.ui.AddRestrictedElementAction"
+									image="com.onpositive.semantic.ui.add" definitionId="com.six.ui.test.command1" />
+
+								<remove-selection definitionId="org.eclipse.ui.edit.delete"
+									caption="Remove Attribute" disabled-image="com.onpositive.semantic.ui.images.deleted"
+									image="com.onpositive.semantic.ui.images.delete" />
+								<groupBy caption="Group By declaring element"
+									propertyId="Owner" image="com.onpositive.ide.ui.hierarchy" />
+								<doNotGroup caption="Do not Group elements" image="com.onpositive.ide.ui.change" />
+							</actions>
+							<columns>
+								<column caption="Name" id="Name" resizeWeight="4"
+									imageFromBase="true" textFromBase="true"
+									role="com.onpositive.commons.namespace.ide.ui.group" />
+								<column caption="Type" id="Type" resizeWeight="3" />
+								<column caption="Required" id="Required" resizeWeight="2"
+									role="checkbox" />
+								<column caption="Translatable" id="Translatable"
+									resizeWeight="2" role="checkbox" />
+							</columns>
+						</table>
+					</composite-editor>
+				</ctab-folder>
+			</vc>
+			<vc>
+				<label caption="Please select element" hAlign="center" vAlign="center"
+					grabHorizontal="true" grabVertical="true" />
+			</vc>
+		</stack>
+	</splitter>
+</form>

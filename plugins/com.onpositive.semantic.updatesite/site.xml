@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.onpositive.semantic.ui.feature_2.0.1.201104121317.jar" id="com.onpositive.semantic.ui.feature" version="2.0.1.201104121317">
+      <category name="semantic.ui"/>
+   </feature>
+   <feature url="features/com.onpositive.richtexteditor.feature_1.0.0.201104121317.jar" id="com.onpositive.richtexteditor.feature" version="1.0.0.201104121317">
+      <category name="richtext"/>
+   </feature>
+   <feature url="features/com.onpositive.richtexteditor.xml.feature_1.0.0.201104121317.jar" id="com.onpositive.richtexteditor.xml.feature" version="1.0.0.201104121317">
+      <category name="richtext"/>
+   </feature>
+   <feature url="features/com.onpositive.semantic.ui.ide.feature_1.0.0.201104121317.jar" id="com.onpositive.semantic.ui.ide.feature" version="1.0.0.201104121317">
+      <category name="semantic.ui"/>
+   </feature>
+   <category-def name="semantic.ui" label="Semantic UI"/>
+   <category-def name="richtext" label="Rich Text Editor"/>
+</site>

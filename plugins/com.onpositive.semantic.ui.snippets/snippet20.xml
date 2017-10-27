@@ -1,0 +1,15 @@
+<composite-editor xmlns="http://jetface.org/JetFace1.0/">
+    <tab-folder font="org.eclipse.jface.bannerfont">
+        <hc caption="%General">
+            <radio caption="%Yes" grabHorizontal="true"/>
+            <radio caption="%No"  grabHorizontal="true"/>
+        </hc>
+		<vc caption="%Other" >
+			<group caption="%Primary">
+			<checkbox caption="%NotSure" />
+			<checkbox caption="%LikeIt" />
+			<checkbox caption="%HateIt" />
+			</group>
+		</vc>			
+    </tab-folder>
+</composite-editor>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="com.onpositive.semantic.model.metaContributor">
+      <serviceProvider
+            providerClass="com.onpositive.semantic.model.java.tests.TestServiceProvider"
+            serviceClass="com.onpositive.semantic.model.java.tests.ITestServiceClass">
+      </serviceProvider>
+   </extension>
+   <extension
+         point="com.onpositive.semantic.model.labels">
+      <label
+            descriptionLabel="In the range from {min} to {max}"
+            label="[{min.@label}...{max.@label}]"
+            targetClass="com.onpositive.semantic.model.java.tests.ItemRange">
+      </label>
+   </extension>
+   <extension
+         point="com.onpositive.semantic.model.objectListener">
+      <listener
+            listenerClass="com.onpositive.semantic.model.java.tests.LLListener"
+            targetClass="com.onpositive.semantic.model.java.tests.BasicPlatformExtensionTest$LL">
+      </listener>
+      <listener
+            listenerClass="com.onpositive.semantic.model.java.tests.TrListener"
+            targetClass="com.onpositive.semantic.model.java.tests.BasicPlatformExtensionTest$Tr">
+      </listener>
+   </extension>
+	<extension
+	      point="com.onpositive.semantic.model.queryPreprocessor">
+    <queryPreprocessor
+          listenerClass="com.onpositive.semantic.model.java.tests.TestPreprocessor"
+          targetClass="com.onpositive.semantic.model.java.tests.QueryTest$TP">
+    </queryPreprocessor>
+	</extension>
+</plugin>

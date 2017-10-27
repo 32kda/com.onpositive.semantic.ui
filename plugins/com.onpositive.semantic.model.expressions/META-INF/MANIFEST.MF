@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Expressions
+Bundle-SymbolicName: com.onpositive.semantic.model.expressions
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: ONPOSITIVE
+Eclipse-RegisterBuddy: com.onpositive.semantic.model.core,com.onpositive.semantic.model.bindings
+Eclipse-BuddyPolicy: global
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: com.onpositive.semantic.model.core;bundle-version="1.0.0"
+Export-Package: com.onpositive.semantic.model.api.query.memimpl,
+ com.onpositive.semantic.model.expressions.impl,
+ com.onpositive.semantic.model.expressions.operatorimplementations

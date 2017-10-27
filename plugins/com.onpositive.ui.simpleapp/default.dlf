@@ -1,0 +1,8 @@
+<form xmlns="http://jetface.org/JetFace1.0/" caption="Hello">
+	<model>
+		<objectValue class="com.onpositive.ui.simpleapp.T" id="d"/>
+	</model>
+	<string />
+	<sourceEditor 
+	contentType=".java" xmlns="http://jetface.org/JetFace1.0/sourceeditors" bindTo="d.someText"/>
+</form>

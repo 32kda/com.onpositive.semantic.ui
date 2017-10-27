@@ -1,0 +1,94 @@
+<project default="doAndroidBuild">
+	<!-- ================================= target: doBuild ================================= -->
+	<property name="jar.path" value="../semantic.android.test/libs/" />
+	<property name="dlm.path" value="../semantic.android.test/assets/schema" />
+	<target name="doAndroidBuild" description="build SemanticUI jar for Android">
+		<echo message="${basedir}">
+		</echo>
+		<delete file="${basedir}/com.onpositive.semantic.android-source.jar" />
+		<delete file="${basedir}/com.onpositive.semantic.android.jar" />
+		<jar destfile="${basedir}/com.onpositive.semantic.android.jar"
+			compress="true" update="true">
+			<fileset dir="${basedir}/../com.onpositive.semantic.model.core/bin">
+			</fileset>
+<!-- 			<fileset dir="${basedir}/../com.onpositive.businessdroids/bin">
+				<exclude name="**/**.xml*" />
+			</fileset> -->
+			<fileset dir="${basedir}/../com.onpositive.semantic.model.java/target/classes">
+			</fileset>
+			<fileset dir="${basedir}/../com.onpositive.semantic.model.expressions/target/classes">
+			</fileset>
+			<fileset dir="${basedir}/../com.onpositive.semantic.model.tree/target/classes">
+			</fileset>
+			<fileset dir="${basedir}/../com.onpositive.semantic.model.ui.generic/target/classes">
+			</fileset>
+			<fileset dir="${basedir}/../com.onpositive.commons.platform/target/classes">
+			</fileset>
+			<fileset dir="${basedir}/../com.onpositive.semantic.model.bindings/bin">
+			</fileset>
+			<fileset dir="${basedir}/../com.onpositive.commons.empty.platform/bin">
+				<exclude name="**/*PlatformConfigurationProvider.class*"/>
+			</fileset>
+		</jar>
+		<jar destfile="${basedir}/com.onpositive.semantic.android-source.jar"
+			compress="true" update="true" roundup="false" excludes="*.xml* *.properties">
+			<fileset dir="${basedir}/../com.onpositive.semantic.model.core/src">
+				<exclude name="**/**.xml*" />
+				<exclude name="**/**.properties" />
+			</fileset>
+			<fileset dir="${basedir}/../com.onpositive.semantic.model.java/src">
+				<exclude name="**/**.xml*" />
+				<exclude name="**/**.properties" />
+			</fileset>
+			<fileset
+				dir="${basedir}/../com.onpositive.semantic.model.expressions/src">
+				<exclude name="**/**.xml*" />
+				<exclude name="**/**.properties" />
+			</fileset>
+			<fileset dir="${basedir}/../com.onpositive.semantic.model.ui.generic/src">
+				<exclude name="**/**.xml*" />
+				<exclude name="**/**.properties" />
+			</fileset>
+			<fileset dir="${basedir}/../com.onpositive.semantic.model.tree/src">
+				<exclude name="**/**.xml*" />
+				<exclude name="**/**.properties" />
+			</fileset>
+			<fileset dir="${basedir}/../com.onpositive.commons.platform/src">
+				<exclude name="**/**.xml*" />
+				<exclude name="**/**.properties" />
+				<exclude name="**/**.txt*" />
+			</fileset>
+			<fileset dir="${basedir}/../com.onpositive.semantic.model.bindings/src">
+				<exclude name="**/**.xml*" />
+				<exclude name="**/**.properties" />
+			</fileset>
+			<fileset dir="${basedir}/../com.onpositive.businessdroids/src">
+				<exclude name="**/**.xml*" />
+				<exclude name="**/**.properties" />
+			</fileset>
+			<fileset dir="${basedir}/../com.onpositive.businessdroids/greendroid">
+				<exclude name="**/**.xml*" />
+				<exclude name="**/**.properties" />
+			</fileset>
+			<fileset dir="${basedir}/../com.onpositive.commons.empty.platform/src">
+				<exclude name="**/**.xml*" />
+				<exclude name="**/**.properties" />
+				<exclude name="**/*PlatformConfigurationProvider.java*"/>
+			</fileset>
+		</jar>
+		<copy todir="${jar.path}" flatten="true" overwrite="true">
+			<resources>
+				<file file="${basedir}/com.onpositive.semantic.android.jar" />
+				<file file="${basedir}/com.onpositive.semantic.android-source.jar" />
+			</resources>
+		</copy>
+		
+		<copy todir="${dlm.path}" flatten="true" overwrite="true">
+			<resources>
+				<file file="${basedir}/../com.onpositive.semantic.model.ui.generic/schema/uixml.dlm" />
+				<file file="${basedir}/../com.onpositive.semantic.model.ui.generic/schema/widgets.dlm" />
+			</resources>
+		</copy>
+
+	</target>
+</project>

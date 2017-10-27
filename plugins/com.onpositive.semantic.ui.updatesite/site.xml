@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.onpositive.semantic.ui.runtime_1.4.0.201210250048.jar" id="com.onpositive.semantic.ui.runtime" version="1.4.0.201210250048">
+      <category name="Semantic UI Runtime"/>
+   </feature>
+   <feature url="features/com.onpositive.semantic.ui.ide.feature_1.4.0.201210250048.jar" id="com.onpositive.semantic.ui.ide.feature" version="1.4.0.201210250048">
+      <category name="Semantic IDE"/>
+   </feature>
+   <category-def name="Semantic IDE" label="Semantic IDE"/>
+   <category-def name="Semantic UI Runtime" label="Semantic UI Runtime"/>
+</site>

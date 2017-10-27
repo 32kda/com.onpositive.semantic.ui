@@ -1,0 +1,9 @@
+<form xmlns="http://jetface.org/JetFace1.0/" grabVertical="true">
+	<model class="com.onpositive.semantic.ui.snippets.Snippet000HelloWorld">
+		<binding id="deded" />
+	</model>
+    <string caption="Name: " bindTo="name"/>
+    <label caption="Value of name: "/>
+    <label  bindTo="name"/>
+	<string bindTo="" />    
+</form>

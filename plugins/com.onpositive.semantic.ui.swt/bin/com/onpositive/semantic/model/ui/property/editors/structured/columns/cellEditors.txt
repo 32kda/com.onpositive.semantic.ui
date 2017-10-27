@@ -1,0 +1,8 @@
+color,
+dialog,
+text,
+combo,
+boolean,
+spinner
+
+color and boolean also affects on how cell looks

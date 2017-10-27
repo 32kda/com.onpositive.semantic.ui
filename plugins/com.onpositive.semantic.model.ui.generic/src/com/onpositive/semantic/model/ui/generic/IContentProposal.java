@@ -1,0 +1,54 @@
+package com.onpositive.semantic.model.ui.generic;
+
+
+/**
+ * IContentProposal describes a content proposal to be shown. It consists of the
+ * content that will be provided if the proposal is accepted, an optional label
+ * used to describe the content to the user, and an optional description that
+ * further elaborates the meaning of the proposal. It also includes a a
+ * zero-based index position within the contents where the cursor should be
+ * placed after a proposal is accepted.
+ * 
+ * @since 3.2
+ * 
+ * @see ContentProposal
+ */
+public interface IContentProposal {
+	/**
+	 * Return the content represented by this proposal.
+	 * 
+	 * @return the String content represented by this proposal.
+	 */
+	public String getContent();
+
+	/**
+	 * Return the integer position within the contents that the cursor should be
+	 * placed after the proposal is accepted.
+	 * 
+	 * @return the zero-based index position within the contents where the
+	 *         cursor should be placed after the proposal is accepted. The range
+	 *         of the cursor position is from 0..N where N is the number of
+	 *         characters in the contents.
+	 */
+	public int getCursorPosition();
+
+	/**
+	 * Return the label used to describe this proposal.
+	 * 
+	 * @return the String label used to display the proposal. If
+	 *         <code>null</code>, then the content will be displayed as the
+	 *         label.
+	 */
+	public String getLabel();
+
+	/**
+	 * Return a description that describes this proposal.
+	 * 
+	 * @return the String label used to further the proposal. If
+	 *         <code>null</code>, then no description will be displayed.
+	 */
+	public String getDescription();
+
+	
+	public Object getElement();
+}

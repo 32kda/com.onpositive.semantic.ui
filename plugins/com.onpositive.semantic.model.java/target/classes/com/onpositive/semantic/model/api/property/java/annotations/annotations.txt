@@ -1,0 +1,51 @@
+Clearly Persistence:
+ * AccessControl
+ * OnCreate
+ * OnDelete
+ * OnModify
+ * Persistent
+ * Name
+ * Index
+ * Id
+ 
+Commands:
+ * NoUndo
+ * CommutativeWith
+  
+Structure:
+ * Embedded
+ * Independent
+ * Child
+ * Parent
+ * Searchable
+ * NoMultiValue
+ * OrderMaintainer
+
+Clearly UI: 
+ * Caption
+ * Description
+ * Category
+ * Group
+ * TextLabel
+ * Image
+ * Display
+ * UserVisible
+ * NoMultiValue
+ 
+Edit condition
+ * Enablement.java
+ * ReadOnly.java 
+
+Validation and valid values:
+ * RealmProvider
+ * RegExp
+ * Range
+ * Validator
+ * FixedBound
+ * Required
+ * Unique
+ * NestedValidation
+ 
+String ->Object
+ * LabelLookup
+ * SeparatorCharacters

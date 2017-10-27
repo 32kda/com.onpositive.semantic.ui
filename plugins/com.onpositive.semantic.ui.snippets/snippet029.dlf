@@ -1,0 +1,6 @@
+<form xmlns="http://jetface.org/JetFace1.0/" grabVertical="true">
+	<model class="com.onpositive.semantic.ui.snippets.Snippet029Summator"/>
+    <string caption="s1: " bindTo="s1"/>
+    <string caption="s2: " bindTo="s2"/>
+    <string caption="sum: " bindTo="{s1+s2}"/>    
+</form>

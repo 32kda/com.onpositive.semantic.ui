@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Equanox
+Bundle-SymbolicName: com.onpositive.commons.platform.equinox;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: ONPOSITIVE
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Require-Bundle: org.eclipse.core.runtime,
+ com.onpositive.commons.platform
+Export-Package: com.onpositive.commons.platform.configuration
+Eclipse-RegisterBuddy: com.onpositive.commons.platform

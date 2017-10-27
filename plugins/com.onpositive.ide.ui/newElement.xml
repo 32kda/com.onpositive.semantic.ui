@@ -1,0 +1,5 @@
+<composite-editor xmlns="http://jetface.org/JetFace1.0/" caption="Add New Element">
+	<hc>
+	<string bindTo="Name"/>		
+	</hc>	
+</composite-editor>

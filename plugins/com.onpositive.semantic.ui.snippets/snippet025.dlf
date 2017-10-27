@@ -1,0 +1,7 @@
+<form xmlns="http://jetface.org/JetFace1.0/" grabVertical="true">
+<label bindTo="DescriptionText" richContent="true"/>
+  <string bindTo="fio" />
+  <spinner bindTo="age" />
+  <combo bindTo="spec"/>
+  <combo bindTo="group"/>
+</form>

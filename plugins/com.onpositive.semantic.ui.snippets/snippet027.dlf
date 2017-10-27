@@ -1,0 +1,16 @@
+<composite-editor xmlns="http://jetface.org/JetFace1.0/">
+    	<hc >
+    	  	<vc >
+				<button hAlign="left" caption="Button1"  grabHorizontal="true"/>
+				<button hAlign="center" caption="Button2" grabHorizontal="true"/>
+				<button hAlign="right" caption="Button3" grabHorizontal="true"/>
+			
+			</vc>
+    	  	<vc >
+				<button hAlign="center" caption="Button1" grabHorizontal="true"/>
+				<button hAlign="center" indent="15,10"  caption="Button2" grabHorizontal="true"/>
+				<button vAlign="bottom" caption="Button3" grabVertical="true"/>
+				
+			</vc>
+		</hc>			
+</composite-editor>

@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Snippets Plug-in
+Bundle-SymbolicName: com.onpositive.semantic.ui.snippets;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Vendor: onpositive
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Require-Bundle: org.eclipse.jface,
+ com.onpositive.semantic.ui.swt,
+ com.onpositive.semantic.model,
+ org.eclipse.core.runtime,
+ com.onpositive.commons.platform,
+ org.eclipse.ui.forms,
+ com.onpositive.richtexteditor,
+ com.onpositive.richtexteditor.xml
+

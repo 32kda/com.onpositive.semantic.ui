@@ -1,0 +1,5 @@
+<formDialog xmlns="http://jetface.org/JetFace1.0/widgets" >
+	<form xmlns="http://jetface.org/JetFace1.0/" >
+		<string bindTo="a" caption="AAAA"/>
+	</form>
+</formDialog>

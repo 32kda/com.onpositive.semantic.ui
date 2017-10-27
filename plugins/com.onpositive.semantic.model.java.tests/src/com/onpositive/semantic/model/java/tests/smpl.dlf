@@ -1,0 +1,7 @@
+<composite-editor xmlns="http://jetface.org/JetFace1.0/">
+	<model class="com.onpositive.semantic.model.java.tests.Person"
+		modelExtension="false">
+	</model>
+	<list caption="Potential Friends" bindTo="@realm filterBy [age<10]">		
+	</list>
+</composite-editor>

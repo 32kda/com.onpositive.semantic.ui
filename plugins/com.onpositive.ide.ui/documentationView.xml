@@ -1,0 +1,20 @@
+<form xmlns="http://jetface.org/JetFace1.0/" caption="Documentation"
+	showValueInTitle="false" id="header">
+	<vc>
+		<text bindTo="model.Description" caption="Description" multiline="false"
+			sourceViewerConfigurator="com.onpositive.semantic.ui.xml.SpellCheckXMLConfigurator" />
+		<hc margin="0,0,0,0" grabHorizontal="true" hAligh="fill">
+			<string caption="Icon" bindTo="model.DocumentationContribution.Icon"
+				readonly="true" grabHorizontal="true" />
+			<button caption="Browse" bindTo="browse" />
+		</hc>
+		<section showValueInTitle="false" bindTo="this" margin="0,0,0,0"
+			caption="Full Documentation" expanded="true" grabVertical="true">
+			<hc margin="0,0,0,0" grabVertical="true">
+				<text
+				id="richtext" 
+					bindTo="model.DocumentationContribution.contents" />
+			</hc>
+		</section>
+	</vc>
+</form>

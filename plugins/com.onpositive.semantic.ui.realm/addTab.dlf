@@ -1,0 +1,48 @@
+<wizard xmlns="http://jetface.org/JetFace1.0/widgets" title="New Viewer Tab">
+	<wizardPage message="Create a new Viewer Tab" title="New Viewer Tab">
+		<composite-editor xmlns="http://jetface.org/JetFace1.0/">
+			<model>
+			</model>
+			<vc>
+				<string bindTo="name" />
+				<label caption="You should check desired columns here:"
+					indent="0,5" />
+				<hc margin="0,0,0,0">
+					<list bindTo="columns" asCheckBox="true" useSelectionAsValue="true"
+						grabHorizontal="true">
+						<actions toMenu="false" toToolbar="false">
+							<selectAll exportAs="select" />
+							<deselectAll exportAs="deselect" />
+						</actions>
+					</list>
+					<vc margin="0,0,0,0" grabHorizontal="false">
+						<button caption="Select All" bindTo="columns.select" />
+						<button caption="Deselect All" bindTo="columns.deselect" />
+					</vc>
+				</hc>
+			</vc>
+		</composite-editor>
+	</wizardPage>
+	<wizardPage message="Configure column order" title="New Viewer Tab">
+		<composite-editor xmlns="http://jetface.org/JetFace1.0/">
+			<model>
+			</model>
+			<vc>
+				<label caption="You should configure column order here:"
+					indent="0,5" />
+				<hc margin="0,0,0,0">
+					<list bindTo="columns" grabHorizontal="true" isOrdered="true">
+						<actions>
+							<moveUp exportAs="moveUp"/>
+							<moveDown exportAs="moveDown"/>
+						</actions>
+					</list>
+					<vc margin="0,0,0,0" grabHorizontal="false">
+						<button caption="Move Up" bindTo="columns.moveUp" />
+						<button caption="Move Down" bindTo="columns.moveDown" />
+					</vc>
+				</hc>
+			</vc>
+		</composite-editor>
+	</wizardPage>
+</wizard>

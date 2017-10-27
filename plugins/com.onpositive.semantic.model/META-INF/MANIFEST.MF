@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Semantic Model
+Bundle-SymbolicName: com.onpositive.semantic.model;singleton:=true
+Bundle-Version: 1.3.9.qualifier
+Bundle-Vendor: onpositive, Inc
+Eclipse-RegisterBuddy: com.onpositive.semantic.model.core
+Export-Package: com.onpositive.semantic.model.platform.contributor,
+ com.onpositive.semantic.model.platform.registry
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Require-Bundle: com.onpositive.commons.platform,
+ com.onpositive.semantic.model.core;bundle-version="1.0.0";visibility:=reexport,
+ com.onpositive.semantic.model.expressions;bundle-version="1.0.0",
+ com.onpositive.semantic.model.bindings;bundle-version="1.0.0";visibility:=reexport

@@ -1,0 +1,20 @@
+<application xmlns="http://onpositive.com/appmodel" title="Sample Application">
+	<action title="Action 1" icon="icons/version.png" toToolbar="true" toMenu="true" class="com.onpositive.ui.simpleapp.action.SampleAction"/>
+	<page title="Some" id="default">
+		<fragment layout="default.dlf" id="defaultview" title="Fragment" />
+		<folder id="rightfolder" relation="right" relationAnchor="defaultview" >
+			<fragment layout="default2.dlf" id="settings.view" title="Settings">
+				<action title="Sample.action" icon="icons/cat.png" class="com.onpositive.ui.simpleapp.action.SampleAction" />
+				<menu title="Sample submenu" icon="icons/version.png" toToolbar="true" toMenu="true">
+					<action title="action1" icon="icons/cat.png" class="com.onpositive.ui.simpleapp.action.SampleAction"/>
+					<action title="action2" icon="icons/cat.png" class="com.onpositive.ui.simpleapp.action.SampleAction"/>
+					<action title="action3" icon="icons/cat.png" class="com.onpositive.ui.simpleapp.action.SampleAction"/>
+				</menu>
+			</fragment>
+			<fragment layout="default3.dlf" id="settings.view1" title="Extra settings" />
+		</folder>
+		<folder id="bottomfolder" relation="bottom" ratio="0.6" relationAnchor="defaultview">
+			<fragment id="eclipse:org.eclipse.ui.views.ContentOutline" title="Outline" />
+		</folder>
+	</page>
+</application>

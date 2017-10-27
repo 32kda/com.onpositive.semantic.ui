@@ -1,0 +1,45 @@
+<project default="doBuild">
+	<!-- ================================= 
+          target: doBuild              
+         ================================= -->
+	<target name="doBuild" description="build distribs">
+		<echo message="${basedir}">
+		</echo>
+		<jar destfile="${basedir}/com.onpositive.semantic.model.core.jar" basedir="${basedir}/../com.onpositive.semantic.model.core/bin">
+		</jar>
+		<!-- <jar destfile="${basedir}/com.onpositive.semantic.model.entity.appengine.jar" basedir="${basedir}/../com.onpositive.semantic.model.entity.appengine/bin">
+		</jar> -->
+		<jar destfile="${basedir}/com.onpositive.semantic.model.java.jar" basedir="${basedir}/../com.onpositive.semantic.model.java/bin">
+		</jar>
+		<jar destfile="${basedir}/com.onpositive.semantic.model.expressions.jar" basedir="${basedir}/../com.onpositive.semantic.model.expressions/bin">
+		</jar>		
+		<jar destfile="${basedir}/com.onpositive.semantic.model.essentials.jar" compress="true">
+			<fileset dir="${basedir}/../com.onpositive.semantic.model.core/bin">
+			</fileset>
+			<fileset dir="${basedir}/../com.onpositive.semantic.model.java/bin">
+			</fileset>
+			<fileset dir="${basedir}/../com.onpositive.semantic.model.expressions/bin">
+			</fileset>
+		</jar>
+		<jar destfile="${basedir}/com.onpositive.semantic.model.all.generic.jar" compress="true">
+			<fileset dir="${basedir}/../com.onpositive.semantic.model.core/bin">
+			</fileset>
+			<fileset dir="${basedir}/../com.onpositive.semantic.model.java/bin">
+			</fileset>
+			<fileset dir="${basedir}/../com.onpositive.semantic.model.bindings/bin">
+			</fileset>
+			<fileset dir="${basedir}/../com.onpositive.semantic.model/bin">
+			</fileset>
+			<fileset dir="${basedir}/../com.onpositive.semantic.model.expressions/bin">
+			</fileset>
+			<fileset dir="${basedir}/../com.onpositive.semantic.model.tree/bin">
+			</fileset>
+			<fileset dir="${basedir}/../com.onpositive.semantic.model.ui.generic/bin">
+			</fileset>
+			<fileset dir="${basedir}/../com.onpositive.commons.platform/bin">
+			</fileset>
+			<fileset dir="${basedir}/../com.onpositive.commons.empty.platform/bin">
+			</fileset>
+		</jar>
+	</target>
+</project>

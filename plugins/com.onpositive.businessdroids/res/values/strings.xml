@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Hello2Activity!</string>
+    <string name="app_name">Hello2</string>
+    <string name="OBJECT_TAG_INDEX">OBJECT_TAG_INDEX</string>
+    <string name="FIELD_VALUE_TAG_INDEX">FIELD_VALUE_TAG_INDEX</string>
+    <string name="TABLE_TAG_INDEX">TABLE_TAG_INDEX</string>
+    <string name="COLUMN_TAG_INDEX">COLUMN_TAG_INDEX</string>
+</resources>
